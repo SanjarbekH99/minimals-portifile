@@ -1,0 +1,125 @@
+.hero{
+    display:flex;
+    position:relative;
+    width:100%;
+    height:85vh;
+    background: url(../img/bacground.png)no-repeat;
+    background-size: 100% 100%;
+    &__block{
+        position:absolute;
+        background: #FAFAFA;
+        width: 40%;
+        height:310px;
+        bottom: 0;
+        left:0;
+        &__title{
+            font-family: 'Ibarra Real Nova';
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: -0.446429px;
+            color: #33323D;
+        }
+        &__button{
+            position: relative;
+            bottom: 10px;
+            width: 40%;
+            margin-left: 40px;
+            padding: 15px 30px;
+            text-decoration: none;
+            background-color: #203A4C;
+            font-family: 'Public Sans';
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+            &:hover{
+                background-color: #43637a;
+            }
+
+            &:active{
+                color: black;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: url(../img/sss.png)no-repeat;
+                background-size: 20px 20px;
+                background-position: top 14px left 10px;
+                background-color: #000000;
+                padding: 22px 20px;
+                left: -40px;
+                top: 0px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .hero{
+        // padding: 0 50px!important;
+        height: 80vh;
+        background: url(../img/bacground.png)no-repeat;
+        background-size: 100% 100%;
+        width: 90%;
+        &__block{
+            padding: 0;
+            width: 75%;
+            height:225px;
+            bottom: 0;
+            left:0;
+            &__title{
+                padding-right:80px;
+                font-size: 39px;
+                line-height: 42px;
+                letter-spacing: -0.357143px;
+            }
+            &__button{
+                bottom: 0;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 795px){
+    .hero{
+        flex-direction: column;
+        position: static;
+        height: 50vh;
+        background: url(../img/bacground.png)no-repeat;
+        background-size: 100% 100%;
+        width: 90%;
+        margin-bottom: 70vh;
+        &__block{
+            width: 100%!important;
+            padding: 0;
+            // position: relative;
+            width: 75%;
+            height: 350px;
+            top: 60vh;
+            left:0;
+            background-color: #F2F2F2;
+            z-index: 10;
+            &__title{
+                width: 100%;
+                padding: 0 ;
+
+                font-size: 55px;
+                line-height: 60px;
+                letter-spacing: -0.357143px;
+                color: #33323D;
+            }
+            &__button{
+                bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.footer{
+    background-color: #33323D;
+    .block{
+        display: flex;
+        position: relative;
+        padding: 10px 0;
+        align-items: center;
+        &__logo{
+            img{
+                display: flex;
+            }
+        }
+        &__nav{
+            display: flex;
+            list-style: none;
+            &__item{
+                font-family: Public Sans;
+                padding:0 15px;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                &__link{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+
+                    &:hover{
+                        color:rgb(185, 180, 180);
+                    }
+
+                    &:active{
+                        color:black;
+                    }
+
+                }
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background: url(../img/in.svg)no-repeat;
+                background-size: contain;
+                top: 23px;
+                right: 0;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../img/github.svg)no-repeat;
+            background-size: contain;
+            top: 23px;
+            right: 150px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../img/twitter.svg)no-repeat;
+            background-size: contain;
+            top: 28px;
+            right: 75px;
+        }
+    }
+}
+
+@media only screen and (max-width: 940px){
+    .footer{
+        .block{
+            width: 90%;
+            padding: 15px 0!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .footer{
+       .block{
+            flex-direction: column;
+            height:250px;
+            &__nav{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding:0;
+                &__item{
+                    padding: 18px 0;
+                }
+                &::after{
+                    width: 25px;
+                    height: 25px;
+                    left: 59%;
+                    top: 85%;
+                }
+            }
+            &::after{
+                width: 25px;
+                height: 25px;
+                left: 37%;
+                top: 85%;
+            }
+            &::before{
+                width: 25px;
+                height: 25px;
+                left: 48%;
+                top: 85%;
+            }
+            
+       }
+    }
+}

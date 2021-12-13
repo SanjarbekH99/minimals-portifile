@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Document</title>
+    <title>Minimals-portifile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Public+Sans&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body>
-    this is scss template
+    <header class="container header">
+        <img src="./img/logo.png" alt="" class="header__logo">
+        <!-- header__toggle--active -->
+        <div class="header__toggle ">
+            <span></span>
+        </div>
+        <ul class="header__nav">
+            <li class="header__nav__item">
+                <a href="" class="header__nav__item__link1">HOME</a>
+            </li>
+            <li class="header__nav__item">
+                <a href="" class="header__nav__item__link">PORTFOLIO</a>
+            </li>
+            <li class="header__nav__item">
+                <a href="" class="header__nav__item__link">CONTACT ME</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container hero">
+            <div class="container hero__block">
+                <h2 class="hero__block__title">Hey, I'm Alex Spencer and I love building beautiful websites</h2>
+                <a href="#" class="hero__block__button">ABOUT ME</a>
+            </div>
+        </section>
+
+        <section class="container about">
+            <div class="about__block">
+                <h2 class="abut__block__title">About Me</h2>
+                <p class="about__block__desc">I’m a junior front-end developer looking for a new role in an exciting
+                    company. I focus on writing accessible HTML, using modern CSS practices and writing clean
+                    JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are
+                    required. I’m based in London, UK, but I’m happy working remotely and have experience in remote
+                    teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going
+                    for a walk, run or cycling. I’d love you to check out my work.</p>
+                <a href="#" class="btn btn__button">GO TO PORTFOLIO</a>
+            </div>
+        </section>
+
+        <sectiom class="container project">
+            <h2 class="project__title">Interested in doing a project together?</h2>
+            <span class="project__line"></span>
+            <a href="#" class="btn__button">CONTACT ME</a>
+        </sectiom>
+    </main>
+
+    <footer class="footer">
+        <div class="container block">
+            <a href="#" class="block__logo">
+                <img src="../img/footlogo.png" alt="logotip image" class="block__logo__img">
+            </a>
+            <ul class="block__nav">
+                <li class="block__nav__item">
+                    <a href="" class="block__nav__item__link">HOME</a>
+                </li>
+                <li class="block__nav__item">
+                    <a href="" class="block__nav__item__link">PORTFOLIO</a>
+                </li>
+                <li class="block__nav__item">
+                    <a href="" class="block__nav__item__link">CONTACT ME</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>

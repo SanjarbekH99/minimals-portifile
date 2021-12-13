@@ -11,5 +11,27 @@ html{
 body{
     font-size: 16px;
     line-height: 1.5;
-    font-family: serif;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Ibarra Real Nova', serif;
+    overflow-x: hidden;
+    background-color: #F2F2F2;
+}
+
+.btn{
+    &__button{
+        text-decoration: none;
+        color: #33323D;
+        padding: 10px 25px;
+        box-shadow: 0 0 0 1px #33323D;
+        box-sizing: border-box;
+
+        &:hover{
+            color: #6a697a;
+            background-color: rgb(235, 231, 231);
+        }
+
+        &:active{
+            box-shadow: 0 0 5px 1px #33323D;
+        }
+    }
 }

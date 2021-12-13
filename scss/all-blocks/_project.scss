@@ -1,0 +1,56 @@
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &__title{
+        position: relative;
+        left: -2;
+        width: 350px;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+    }
+
+    &__line{
+        width: 500px;
+        height: 1px;
+        background-color: #33323D;
+        opacity: 0.15;
+    }
+}
+
+@media only screen and (max-width: 1072px){
+    .project{
+        margin-top: 100px;
+        margin-bottom: 70px;
+        &__title{
+            width: 350px;
+        }
+    
+        &__line{
+            width: 120px;
+            height: 1px;
+            background-color: #33323D;
+            opacity: 0.15;
+        }
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .project{
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        &__title{
+            width: 100%;
+            width: 350px;
+        }
+    
+        &__line{
+            width: 120px;
+        }
+    }
+}

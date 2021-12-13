@@ -3,3 +3,10 @@
     margin: 0 auto;
     padding: 0 30px;
 }
+
+@media only screen and (max-width: 950px){
+    .container{
+        margin: 0 auto;
+        padding: 0 30px!important;
+    }
+}
